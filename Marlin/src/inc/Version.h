@@ -38,7 +38,7 @@
   /**
    * Marlin release version identifier
    */
-  #define SHORT_BUILD_VERSION "SM2-5.2.1"
+  #define SHORT_BUILD_VERSION "SM2-5.2.1_UEMod_v0.0.1"
 
   /**
    * Verbose version identifier which should contain a reference to the location
@@ -73,7 +73,7 @@
   /**
    * Defines a generic printer name to be output to the LCD after booting Marlin.
    */
-  #define MACHINE_NAME "3D Printer"
+  #define MACHINE_NAME "3D Printer with Ultimate Extruder Mod"
 
   /**
    * The SOURCE_CODE_URL is the location where users will find the Marlin Source

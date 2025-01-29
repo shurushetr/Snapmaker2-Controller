@@ -5,7 +5,7 @@ Import("env")
 
 board = env.BoardConfig()
 
-print("++++++++++++++++++++++++++++++prepare upload start++++++++++++++++++++++++++++++\n")
+print("++++++++++++++++++++++++++++++ PREPARE UPLOAD SCRIPT START ++++++++++++++++++++++++++++++\n")
 
 upload_protocol = env.subst("$UPLOAD_PROTOCOL")
 if upload_protocol.startswith("jlink"):
@@ -37,4 +37,3 @@ if upload_protocol.startswith("jlink"):
     )
 elif upload_protocol.startswith("stlink"):
     print("st is not supprted now!")
-

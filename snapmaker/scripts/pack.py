@@ -20,6 +20,7 @@ TYPE_MAIN_CONTROLLER = 0
 TYPE_EXTERNAL_MODULE = 1
 TYPE_SCREEN_MODULE = 2
 
+print("++++++++++++++++++++++++++++++ PACK SCRIPT START ++++++++++++++++++++++++++++++\n")
 
 def pack_minor_image(image_type, start_id, end_id, version, input, output):
     with open(input, 'rb') as f:
@@ -84,7 +85,8 @@ def append_body(output, filename):
 def pack_major_image(controller=None, module=None, screen=None, version=None):
     count = 0
     date  = datetime.datetime.today().strftime('%Y%m%d')
-    version_pattern = r"V\d+\.\d+\.\d+.+"
+    #version_pattern = r"V\d+\.\d+\.\d+.+"
+    version_pattern = r"V\d+\.\d+\.\d+_UEMOD_V\d+\.\d+\.\d+"
 
     if isinstance(module, Path):
         print("module path: {}".format(module.absolute()))
@@ -339,7 +341,6 @@ def main(argv=None):
         pack_major_image(minor_images['controller'], minor_images['module'], minor_images['screen'], args.version)
     else:
         pack_major_image(minor_contoller, minor_module, args.screen, args.version)
-
 
 if __name__ == "__main__":
     main()

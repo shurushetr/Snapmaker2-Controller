@@ -7,7 +7,7 @@ Import("env")
 platform = env.PioPlatform()
 board = env.BoardConfig()
 
-print("++++++++++++++++++++++++++++++Prepare env start++++++++++++++++++++++++++++++")
+print("++++++++++++++++++++++++++++++ PREPARE BUILD ENV SCRIPT START ++++++++++++++++++++++++++++++")
 print("Prepare env for " + env.get("BOARD"))
 
 frwk = env.get("PIOFRAMEWORK")
@@ -35,4 +35,4 @@ else:
   shutil.copytree(join(sys.path[0], mcu[0:6].upper()), frwk_dir)
 """
 
-print("++++++++++++++++++++++++++++++Prepare env end++++++++++++++++++++++++++++++")
+print("++++++++++++++++++++++++++++++ PREPARE BUILD ENV SCRIPT END++++++++++++++++++++++++++++++")
