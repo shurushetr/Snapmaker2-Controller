@@ -1,24 +1,9 @@
-# Snapmaker 2.0 Controller Firmware
+# Snapmaker 2.0 Controller Firmware - Ultimate_Extruder_Mod
 
-Snapmaker2-Controller is the firmware for Snapmaker 2.0 3-in-1 3D Printers. It's based on the popular [Marlin firmware](http://marlinfw.org/) with optimized FreeRTOS support.
+This is a direct fork of official [Official Snapmaker Controller Repo](https://github.com/Snapmaker/Snapmaker2-Controller) to make a version of firmware compatible with Bondtech/SliceEngineering tech.
+This will be updated with latest changes introduced by Snapmaker.
 
-## Documentation
-
-Snapmaker2-Controller builds on the codebase of Marlin 2.0, we also added some new features:
-
-- Build on top of FreeRTOS.
-- Support 3 different function modules: 3D Printing Module, Laser Module, CNC Module.
-- Support add-ons like *Rotary Module* and *Enclosure Module*.
-- CAN based communication system.
-- Snapmaker specific functions like Auto-leveling, Laser Auto-Focus, Power-Loss Recovery etc.
-- HMI (Touch Screen) communication over SSTP.
-
-To read more documentations about **Snapmaker2-Controller**, you can checkout the [Snapmaker2-Controller Overview](https://github.com/Snapmaker/Snapmaker2-Controller/blob/main/docs/Overview.md) or [Hardware Link](https://github.com/Snapmaker/Snapmaker2-Controller/blob/main/docs/Hardware-Link.md) for further reading.
-
-## Feedback & Contribution
-
-- To submit a bug or feature request, [file an issue](https://github.com/Snapmaker/Snapmaker2-Controller/issues/new) in github issues.
-- To contribute some code, make sure you have read and followed our guidelines for [contributing](https://github.com/Snapmaker/Snapmaker2-Controller/blob/master/CONTRIBUTING.md).
+Please read more about the firmware at [the main branch readme](https://github.com/Snapmaker/Snapmaker2-Controller/blob/main/README.md)
 
 ## Development
 
